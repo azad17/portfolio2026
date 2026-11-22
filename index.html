@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azad Lal | Software Engineer</title>
+  <meta name="description"
+    content="Portfolio of Azad Lal, Software Engineer specializing in full-stack engineering, distributed systems, and scalable web architecture.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Lucide icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" class="scroll-progress"></div>
+
+  <!-- Navigation Bar (Clean & Minimalist: Logo & View Portfolio) -->
+  <!-- <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-text">Azad Lal</span>
+        <span class="logo-dot"></span>
+      </a>
+
+      <div class="nav-actions">
+        <a href="#projects" class="btn-nav-cta">
+          <span>View Portfolio</span>
+          <i data-lucide="arrow-up-right"></i>
+        </a>
+      </div>
+    </div>
+  </header> -->
+
+  <!-- Hero Section (Faithfully matching the mockup image) -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-wrapper">
+      <img src="home.webp" alt="Azad Lal - Software Engineer" class="hero-bg-img" id="hero-img">
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content-container">
+      <div class="hero-text-block">
+        <h1 class="hero-title">Azad / Lalu</h1>
+        <div class="hero-subtitles-wrap">
+          <span class="hero-role-badge">Software Engineer</span>
+          <span class="hero-role-badge">Creator</span>
+          <span class="hero-role-badge">Athlete</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn-portfolio-pill" id="hero-cta-btn">
+            <span class="btn-text">Let's Talk</span>
+            <span class="btn-divider"></span>
+            <span class="btn-arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Find Me Section (Narrow, Clean & Minimalist Strip) -->
+  <section class="findme-section" id="find-me">
+    <div class="container">
+      <div class="findme-narrow-bar">
+        <!-- Medium Link -->
+        <a href="https://medium.com/@azadlal.lm8" target="_blank" rel="noopener noreferrer" class="social-chip"
+          title="Medium: @azad">
+          <svg class="chip-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
+          </svg>
+          <span class="chip-id">@azad</span>
+          <i data-lucide="arrow-up-right" class="chip-arrow"></i>
+        </a>
+
+        <!-- LinkedIn Link -->
+        <a href="www.linkedin.com/in/azad-lal" target="_blank" rel="noopener noreferrer" class="social-chip"
+          title="LinkedIn: azadlal">
+          <svg class="chip-icon" width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
+          <span class="chip-id">azadlal</span>
+          <i data-lucide="arrow-up-right" class="chip-arrow"></i>
+        </a>
+
+        <!-- Instagram Link -->
+        <a href="https://www.instagram.com/eight.route?jplx=MXQ4NTk1Z3l0bWpndg==" target="_blank"
+          rel="noopener noreferrer" class="social-chip" title="Instagram: @eight.route">
+          <svg class="chip-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+          </svg>
+          <span class="chip-id">eight.route</span>
+          <i data-lucide="arrow-up-right" class="chip-arrow"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <i data-lucide="user"></i>
+          <span>About Azad</span>
+        </div>
+        <h2 class="section-title">Engineering with Purpose & Precision</h2>
+        <p class="section-subtitle">
+          Bridging creative problem-solving and deep technical architecture to build scalable, resilient, and performant
+          digital experiences.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card intro-card">
+          <div class="card-glow"></div>
+          <h3 class="card-heading">Who I Am</h3>
+          <p class="about-lead">
+            I am a full-stack <strong>Software Engineer</strong> who thrives at the intersection of robust backend
+            systems and intuitive user interfaces.
+          </p>
+          <p class="about-body">
+            With experience designing distributed architectures, high-performance APIs, and reactive frontend
+            experiences, I approach every challenge with an emphasis on code quality, scalability, and measurable
+            real-world impact.
+          </p>
+          <p class="about-body">
+            Whether architecting cloud infrastructure on AWS, streamlining asynchronous data pipelines, or refining
+            modern UI component systems, I focus on building software that users love and developers enjoy maintaining.
+          </p>
+
+          <div class="quick-highlights">
+            <div class="highlight-item">
+              <i data-lucide="code-2" class="highlight-icon"></i>
+              <div>
+                <strong>Clean Code Advocate</strong>
+                <span>Maintainable, testable, modular patterns</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i data-lucide="cpu" class="highlight-icon"></i>
+              <div>
+                <strong>System Architecture</strong>
+                <span>High concurrency, microservices & APIs</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i data-lucide="zap" class="highlight-icon"></i>
+              <div>
+                <strong>Performance First</strong>
+                <span>Sub-second load times & optimal resource use</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-stats-container">
+          <div class="stat-card">
+            <div class="stat-number">4<span class="stat-accent">+</span></div>
+            <div class="stat-label">Years of Experience</div>
+            <p class="stat-desc">Shipping production-grade systems</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">25<span class="stat-accent">+</span></div>
+            <div class="stat-label">Projects Completed</div>
+            <p class="stat-desc">From concept to deployment</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">99.9<span class="stat-accent">%</span></div>
+            <div class="stat-label">System Reliability</div>
+            <p class="stat-desc">Uptime across deployed services</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">100k<span class="stat-accent">+</span></div>
+            <div class="stat-label">Active Users Reached</div>
+            <p class="stat-desc">Across enterprise & web applications</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Technologies Section -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <i data-lucide="terminal"></i>
+          <span>Tech Stack</span>
+        </div>
+        <h2 class="section-title">Core Competencies & Toolkit</h2>
+        <p class="section-subtitle">
+          Modern technologies and frameworks I leverage to engineer robust, full-stack applications.
+        </p>
+      </div>
+
+      <div class="skills-categories-grid">
+        <!-- Frontend -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="cat-icon-wrap">
+              <i data-lucide="layout"></i>
+            </div>
+            <div>
+              <h3 class="cat-title">Frontend Engineering</h3>
+              <p class="cat-desc">Fluid, responsive, modern web interfaces</p>
+            </div>
+          </div>
+          <div class="skills-chips">
+            <span class="skill-chip">TypeScript</span>
+            <span class="skill-chip">JavaScript (ES6+)</span>
+            <span class="skill-chip">React.js</span>
+            <span class="skill-chip">Next.js 14+</span>
+            <span class="skill-chip">Tailwind CSS</span>
+            <span class="skill-chip">HTML5 / CSS3</span>
+            <span class="skill-chip">Redux / Zustand</span>
+            <span class="skill-chip">Vite / Webpack</span>
+            <span class="skill-chip">Responsive UI</span>
+          </div>
+        </div>
+
+        <!-- Backend & APIs -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="cat-icon-wrap">
+              <i data-lucide="server"></i>
+            </div>
+            <div>
+              <h3 class="cat-title">Backend & Microservices</h3>
+              <p class="cat-desc">Resilient server-side architectures & APIs</p>
+            </div>
+          </div>
+          <div class="skills-chips">
+            <span class="skill-chip">Node.js</span>
+            <span class="skill-chip">Express.js</span>
+            <span class="skill-chip">Python</span>
+            <span class="skill-chip">FastAPI</span>
+            <span class="skill-chip">Go (Golang)</span>
+            <span class="skill-chip">RESTful APIs</span>
+            <span class="skill-chip">GraphQL</span>
+            <span class="skill-chip">WebSockets</span>
+            <span class="skill-chip">JWT / OAuth2</span>
+          </div>
+        </div>
+
+        <!-- Databases & Caching -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="cat-icon-wrap">
+              <i data-lucide="database"></i>
+            </div>
+            <div>
+              <h3 class="cat-title">Databases & Storage</h3>
+              <p class="cat-desc">High-throughput data persistence & caching</p>
+            </div>
+          </div>
+          <div class="skills-chips">
+            <span class="skill-chip">PostgreSQL</span>
+            <span class="skill-chip">MongoDB</span>
+            <span class="skill-chip">Redis</span>
+            <span class="skill-chip">MySQL</span>
+            <span class="skill-chip">Prisma ORM</span>
+            <span class="skill-chip">Mongoose</span>
+            <span class="skill-chip">Query Optimization</span>
+            <span class="skill-chip">Data Modeling</span>
+          </div>
+        </div>
+
+        <!-- DevOps & Cloud -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="cat-icon-wrap">
+              <i data-lucide="cloud"></i>
+            </div>
+            <div>
+              <h3 class="cat-title">DevOps & Cloud Systems</h3>
+              <p class="cat-desc">Automated deployments and infrastructure</p>
+            </div>
+          </div>
+          <div class="skills-chips">
+            <span class="skill-chip">Docker</span>
+            <span class="skill-chip">Kubernetes</span>
+            <span class="skill-chip">AWS (EC2, S3, RDS)</span>
+            <span class="skill-chip">CI/CD Pipelines</span>
+            <span class="skill-chip">GitHub Actions</span>
+            <span class="skill-chip">Nginx</span>
+            <span class="skill-chip">Linux Administration</span>
+            <span class="skill-chip">Vercel & Netlify</span>
+          </div>
+        </div>
+
+        <!-- Engineering Practices -->
+        <div class="skill-category-card full-width">
+          <div class="category-header">
+            <div class="cat-icon-wrap">
+              <i data-lucide="git-branch"></i>
+            </div>
+            <div>
+              <h3 class="cat-title">Practices, Tooling & Architecture</h3>
+              <p class="cat-desc">Methodologies ensuring maintainability, code quality, and fast delivery</p>
+            </div>
+          </div>
+          <div class="skills-chips">
+            <span class="skill-chip">Git / GitHub Workflow</span>
+            <span class="skill-chip">System Design & Patterns</span>
+            <span class="skill-chip">Test-Driven Development (Jest / Vitest)</span>
+            <span class="skill-chip">Microservices Architecture</span>
+            <span class="skill-chip">API Rate Limiting & Security</span>
+            <span class="skill-chip">Performance Profiling</span>
+            <span class="skill-chip">Agile / Scrum</span>
+            <span class="skill-chip">Code Review & Mentorship</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <i data-lucide="folder-git-2"></i>
+          <span>Portfolio Works</span>
+        </div>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">
+          Selected software engineering systems, tools, and platforms engineered with performance, scalability, and UX
+          in mind.
+        </p>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filters" id="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+          <button class="filter-btn" data-filter="systems">Distributed Systems</button>
+          <button class="filter-btn" data-filter="devops">Cloud & DevOps</button>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card" data-category="systems">
+          <div class="project-card-banner">
+            <div class="project-icon-badge">
+              <i data-lucide="cpu"></i>
+            </div>
+            <span class="project-badge">Distributed Systems</span>
+          </div>
+
+          <div class="project-content">
+            <h3 class="project-title">NexusQueue Engine</h3>
+            <p class="project-desc">
+              High-throughput asynchronous distributed task scheduling and queue management engine built to process
+              concurrent workloads with zero data loss.
+            </p>
+
+            <div class="project-features">
+              <div class="feature-bullet"><i data-lucide="check-circle-2"></i> Sub-millisecond latency job dispatching
+              </div>
+              <div class="feature-bullet"><i data-lucide="check-circle-2"></i> Fault-tolerant worker heartbeat &
+                automatic retry</div>
+              <div class="feature-bullet"><i data-lucide="check-circle-2"></i> Real-time observability dashboard</div>
+            </div>
+
+            <div class="project-tech-tags">
+              <span>Go</span>
+              <span>Redis</span>
+              <span>Docker</span>
+              <span>WebSockets</span>
+              <span>PostgreSQL</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="#" class="btn-card-action primary"
+                onclick="event.preventDefault(); alert('Demo project link: In production preview.');">
+                <span>Live Demo</span>
+                <i data-lucide="external-link"></i>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-card-action secondary">
+                <i data-lucide="github"></i>
+                <span>Source</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-category="fullstack">
+          <div class="project-card-banner">
+            <div class="project-icon-badge">
+              <i data-lucide="activity"></i>
+            </div>
+            <span class="project-badge">Full Stack Web</span>
+          </div>
+
+          <div class="project-content">
+            <h3 class="project-title">OmniPulse Analytics</h3>
+            <p class="project-desc">
+              Real-time telemetry and collaborative analytics platform empowering engineering teams to monitor
+              microservices and user events dynamically.
+            </p>
+
+            <div class="project-features">
+              <div class="feature-bullet"><i data-lucide="check-circle-2"></i> Real-time streaming charts with dynamic
+                time-series aggregation</div>
+              <div class="feature-bullet"><i data-lucide="check-circle-2"></i> Multi-tenant role-based access control
+                (RBAC)</div>
+              <div class="feature-bullet"><i data-lucide="check-circle-2"></i> Automated anomaly alerting via webhooks
+              </div>
+            </div>
+
+            <div class="project-tech-tags">
+              <span>Next.js 14</span>
+              <span>TypeScript</span>
+              <span>Node.js</span>
+              <span>TimescaleDB</span>
+              <span>Tailwind CSS</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="#" class="btn-card-action primary"
+                onclick="event.preventDefault(); alert('OmniPulse platform live dashboard.');">
+                <span>Live Demo</span>
+                <i data-lucide="external-link"></i>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-card-action secondary">
+                <i data-lucide="github"></i>
+                <span>Source</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-category="devops">
+          <div class="project-card-banner">
+            <div class="project-icon-badge">
+              <i data-lucide="shield-check"></i>
+            </div>
+            <span class="project-badge">Cloud & Security</span>
+          </div>
+
+          <div class="project-content">
+            <h3 class="project-title">DevVault API Gateway</h3>
+            <p class="project-desc">
+              Ultra-fast API authentication gateway and secret management service designed for multi-tier microservice
+              infrastructures.
+            </p>
+
+            <div class="project-features">
+              <div class="feature-bullet"><i data-lucide="check-circle-2"></i> Token bucket rate limiting with Redis
+                cluster caching</div>
+              <div class="feature-bullet"><i data-lucide="check-circle-2"></i> End-to-end encrypted secret provisioning
+              </div>
+              <div class="feature-bullet"><i data-lucide="check-circle-2"></i> Comprehensive audit logging and
+                zero-trust verification</div>
+            </div>
+
+            <div class="project-tech-tags">
+              <span>Python</span>
+              <span>FastAPI</span>
+              <span>Redis</span>
+              <span>AWS KMS</span>
+              <span>Docker</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="#" class="btn-card-action primary"
+                onclick="event.preventDefault(); alert('DevVault API Gateway.');">
+                <span>Live Demo</span>
+                <i data-lucide="external-link"></i>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-card-action secondary">
+                <i data-lucide="github"></i>
+                <span>Source</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" data-category="fullstack">
+          <div class="project-card-banner">
+            <div class="project-icon-badge">
+              <i data-lucide="sparkles"></i>
+            </div>
+            <span class="project-badge">AI & Tooling</span>
+          </div>
+
+          <div class="project-content">
+            <h3 class="project-title">Hyperion Code Assistant</h3>
+            <p class="project-desc">
+              Context-aware developer companion tool that scans Git pull requests, verifies architectural patterns, and
+              suggests performance optimizations.
+            </p>
+
+            <div class="project-features">
+              <div class="feature-bullet"><i data-lucide="check-circle-2"></i> AST-based semantic code diff inspection
+              </div>
+              <div class="feature-bullet"><i data-lucide="check-circle-2"></i> Instant syntax & security vulnerability
+                scans</div>
+              <div class="feature-bullet"><i data-lucide="check-circle-2"></i> Automated GitHub Action CI integration
+              </div>
+            </div>
+
+            <div class="project-tech-tags">
+              <span>TypeScript</span>
+              <span>Node.js</span>
+              <span>Vector DB</span>
+              <span>OpenAI API</span>
+              <span>GitHub API</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="#" class="btn-card-action primary"
+                onclick="event.preventDefault(); alert('Hyperion AI assistant.');">
+                <span>Live Demo</span>
+                <i data-lucide="external-link"></i>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-card-action secondary">
+                <i data-lucide="github"></i>
+                <span>Source</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience Timeline Section -->
+  <!-- <section class="section experience-section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <i data-lucide="briefcase"></i>
+          <span>Career Journey</span>
+        </div>
+        <h2 class="section-title">Work Experience</h2>
+        <p class="section-subtitle">
+          Proven track record of delivering resilient software systems and driving engineering impact.
+        </p>
+      </div> -->
+
+  <!-- <div class="timeline-container"> -->
+  <!-- Timeline Item 1 -->
+  <!-- <div class="timeline-item">
+          <div class="timeline-marker">
+            <span class="marker-dot"></span>
+            <div class="marker-line"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-period">2023 - Present</span>
+              <span class="timeline-badge">Current Role</span>
+            </div>
+            <h3 class="timeline-role">Senior Full Stack Engineer</h3>
+            <h4 class="timeline-company">Enterprise Cloud Solutions</h4>
+            <p class="timeline-summary">
+              Leading the architecture and engineering of distributed cloud microservices and high-performance
+              customer-facing web applications.
+            </p>
+            <ul class="timeline-achievements">
+              <li>Refactored legacy monolith into decoupled microservices, decreasing API response latency by 42%.</li>
+              <li>Engineered a real-time notification engine processing over 2M events daily with 99.99% delivery
+                guarantee.</li>
+              <li>Mentored 5 junior engineers and established automated CI/CD pipelines reducing deployment friction by
+                60%.</li>
+            </ul>
+            <div class="timeline-stack">
+              <span>React</span>
+              <span>Next.js</span>
+              <span>TypeScript</span>
+              <span>Go</span>
+              <span>AWS</span>
+              <span>Docker</span>
+            </div>
+          </div>
+        </div>
+
+        <-- Timeline Item 2 -->
+  <!-- <div class="timeline-item">
+          <div class="timeline-marker">
+            <span class="marker-dot"></span>
+            <div class="marker-line"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-period">2021 - 2023</span>
+            </div>
+            <h3 class="timeline-role">Software Engineer</h3>
+            <h4 class="timeline-company">FinTech Innovators Labs</h4>
+            <p class="timeline-summary">
+              Developed secure financial transaction processing workflows and responsive web portals with strict
+              compliance and security requirements.
+            </p>
+            <ul class="timeline-achievements">
+              <li>Designed idempotency keys and transactional queues reducing failed payment duplicate requests to zero.
+              </li>
+              <li>Built comprehensive test suites (unit, integration, end-to-end) achieving 88%+ test coverage.</li>
+              <li>Enhanced frontend web performance, lifting Google Lighthouse score from 64 to 96.</li>
+            </ul>
+            <div class="timeline-stack">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>PostgreSQL</span>
+              <span>Redis</span>
+              <span>React</span>
+              <span>Jest</span>
+            </div>
+          </div>
+        </div> -->
+
+  <!-- Timeline Item 3 -->
+  <!-- <div class="timeline-item">
+          <div class="timeline-marker">
+            <span class="marker-dot"></span>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-period">2020 - 2021</span>
+            </div>
+            <h3 class="timeline-role">Junior Software Developer</h3>
+            <h4 class="timeline-company">Digital Tech Studio</h4>
+            <p class="timeline-summary">
+              Collaborated on building responsive client websites, RESTful backend endpoints, and third-party API
+              integrations.
+            </p>
+            <ul class="timeline-achievements">
+              <li>Developed RESTful API endpoints for content management and eCommerce checkout flows.</li>
+              <li>Collaborated closely with UI/UX designers to implement pixel-perfect, accessible web interfaces.</li>
+            </ul>
+            <div class="timeline-stack">
+              <span>JavaScript</span>
+              <span>HTML5 / SCSS</span>
+              <span>Python</span>
+              <span>MySQL</span>
+              <span>Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Beyond The Code / Passions Section (Tying into the hero photo props!) -->
+  <section class="section passions-section" id="passions">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <i data-lucide="compass"></i>
+          <span>Beyond The Code</span>
+        </div>
+        <h2 class="section-title">Discipline, Focus & Perspective</h2>
+        <p class="section-subtitle">
+          Great engineering is fueled by curiosity, physical rigor, and a sharp eye for detail. The items in the
+          background tell that story.
+        </p>
+      </div>
+
+      <div class="passions-grid">
+        <!-- Boxing Card -->
+        <div class="passion-card">
+          <div class="passion-header">
+            <div class="passion-icon-box">
+              <i data-lucide="swords"></i>
+            </div>
+            <span class="passion-tag">The Gloves</span>
+          </div>
+          <h3 class="passion-title">Boxing & Discipline</h3>
+          <p class="passion-desc">
+            Boxing instills mental resilience, razor-sharp focus under pressure, and relentless consistency. In
+            engineering, that same grit helps solve elusive bugs and tackle demanding system bottlenecks.
+          </p>
+          <div class="passion-takeaway">
+            <i data-lucide="check"></i>
+            <span>Composure, grit & deliberate practice</span>
+          </div>
+        </div> -->
+
+        <!-- Football / Cleats Card -->
+        <div class="passion-card">
+          <div class="passion-header">
+            <div class="passion-icon-box">
+              <i data-lucide="trophy"></i>
+            </div>
+            <span class="passion-tag">The Cleats</span>
+          </div>
+          <h3 class="passion-title">Football & Teamwork</h3>
+          <p class="passion-desc">
+            Football is all about agile movement, spatial awareness, and collective synchrony. Building complex software
+            is the ultimate team sport—success relies on clear communication, trust, and shared momentum.
+          </p>
+          <div class="passion-takeaway">
+            <i data-lucide="check"></i>
+            <span>Agility, collaboration & collective velocity</span>
+          </div>
+        </div>
+
+        <!-- Photography / Camera Bag Card -->
+        <div class="passion-card">
+          <div class="passion-header">
+            <div class="passion-icon-box">
+              <i data-lucide="camera"></i>
+            </div>
+            <span class="passion-tag">The Camera Bag</span>
+          </div>
+          <h3 class="passion-title">Photography & Detail</h3>
+          <p class="passion-desc">
+            Behind the camera, every millimeter, angle, and photon matters. That trained photographic eye translates
+            directly into pixel-precise UI design, aesthetic balance, and nuanced user empathy.
+          </p>
+          <div class="passion-takeaway">
+            <i data-lucide="check"></i>
+            <span>Composition, micro-details & perspective</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Connect Section -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-card-wrapper">
+        <div class="contact-left">
+          <div class="section-tag">
+            <i data-lucide="mail"></i>
+            <span>Get in Touch</span>
+          </div>
+          <h2 class="contact-heading">Let's Build Something Impactful Together.</h2>
+          <p class="contact-sub">
+            Whether you have a groundbreaking project in mind, need a versatile Software Engineer for your engineering
+            team, or just want to talk tech and architecture, my inbox is always open.
+          </p>
+
+          <div class="contact-direct-info">
+            <div class="contact-info-item">
+              <div class="info-icon">
+                <i data-lucide="mail"></i>
+              </div>
+              <div class="info-text">
+                <span class="info-label">Email Me</span>
+                <a href="mailto:azadlal@example.com" class="info-link" id="email-text">azdworkmail@gmail.com</a>
+              </div>
+              <button class="btn-copy-email" id="copy-email-btn" title="Copy email address" aria-label="Copy email">
+                <i data-lucide="copy" id="copy-icon"></i>
+              </button>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="info-icon">
+                <i data-lucide="map-pin"></i>
+              </div>
+              <div class="info-text">
+                <span class="info-label">Location</span>
+                <span class="info-value">Open to Remote & Global Relocation</span>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="info-icon">
+                <i data-lucide="check-circle"></i>
+              </div>
+              <div class="info-text">
+                <span class="info-label">Current Status</span>
+                <span class="info-value status-highlight">Actively taking on new engineering opportunities</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links-row">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-pill" title="GitHub">
+              <i data-lucide="github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-pill"
+              title="LinkedIn">
+              <i data-lucide="linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-pill"
+              title="X / Twitter">
+              <i data-lucide="twitter"></i>
+              <span>Twitter</span>
+            </a>
+            <a href="#" onclick="event.preventDefault(); alert('Resume download simulated.');"
+              class="social-pill resume" title="Download CV">
+              <i data-lucide="file-text"></i>
+              <span>Resume PDF</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <form class="contact-form" id="contact-form">
+            <h3 class="form-title">Send a Direct Message</h3>
+
+            <div class="form-group">
+              <label for="name" class="form-label">Your Name</label>
+              <div class="input-wrapper">
+                <i data-lucide="user" class="input-icon"></i>
+                <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Sarah Jenkins" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <div class="input-wrapper">
+                <i data-lucide="at-sign" class="input-icon"></i>
+                <input type="email" id="email" name="email" class="form-input" placeholder="e.g. sarah@company.com"
+                  required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <div class="input-wrapper">
+                <i data-lucide="message-square" class="input-icon"></i>
+                <input type="text" id="subject" name="subject" class="form-input"
+                  placeholder="Project collaboration / Role inquiry" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <div class="input-wrapper textarea-wrapper">
+                <textarea id="message" name="message" rows="4" class="form-input form-textarea"
+                  placeholder="Tell me about your project, timeline, or engineering needs..." required></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-submit-form" id="submit-btn">
+              <span>Send Message</span>
+              <i data-lucide="send"></i>
+            </button>
+
+            <div class="form-feedback" id="form-feedback"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#hero" class="brand-logo">
+          <span>Azad Lal</span>
+          <span class="logo-dot"></span>
+        </a>
+        <p class="footer-tagline">Software Engineer &middot; Cinematography &middot; Athlete</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#find-me">Find Me</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#passions">Interests</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Azad Lal. Engineered with passion, precision, and modern web
+          standards.</p>
+        <a href="#hero" class="back-to-top" aria-label="Back to top">
+          <span>Back to Top</span>
+          <i data-lucide="arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification Toast -->
+  <div class="toast" id="toast">
+    <i data-lucide="check-circle" class="toast-icon"></i>
+    <span class="toast-message" id="toast-message">Message copied!</span>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+
+</html>
